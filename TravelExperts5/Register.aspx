@@ -1,8 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="TravelExperts5.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            height: 398px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id ="regfrm">
+    <div id ="regfrm" class="auto-style1">
         <p>Register as a new customer</p>
         <p>
             <asp:Table runat="server">
@@ -67,7 +72,18 @@
                         <asp:TextBox ID="PasswordBox" runat="server"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
+               <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">Confirm Password</asp:TableCell>                   
+                    <asp:TableCell runat="server">
+                        <asp:TextBox ID="ConfirmPasswordBox" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                </asp:TableRow>
             </asp:Table>
+        </p>
+        <p>
+            <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear" />
         </p>
     </div>
 </asp:Content>

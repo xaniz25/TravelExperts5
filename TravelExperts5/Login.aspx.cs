@@ -13,5 +13,15 @@ namespace TravelExperts5
         {
 
         }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ResetButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

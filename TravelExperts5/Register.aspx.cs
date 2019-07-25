@@ -13,5 +13,15 @@ namespace TravelExperts5
         {
 
         }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
