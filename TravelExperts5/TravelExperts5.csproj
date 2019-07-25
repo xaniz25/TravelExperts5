@@ -73,6 +73,7 @@
     <Content Include="Content\styles.css" />
     <Content Include="Content\travellogo.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Detail.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -83,6 +84,13 @@
     <Content Include="Dash.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
