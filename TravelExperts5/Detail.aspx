@@ -52,7 +52,7 @@
                     <asp:Parameter Name="CustPassword" Type="String" />
                 </InsertParameters>
                 <SelectParameters>
-                    <asp:SessionParameter Name="CustUserName" SessionField="CustUserName" Type="String" />
+                    <asp:SessionParameter Name="CustUserName" SessionField="L.Enison" Type="String" DefaultValue="L.Enison" />
                 </SelectParameters>
                 <UpdateParameters>
                     <asp:Parameter Name="CustFirstName" Type="String" />
@@ -82,7 +82,11 @@
                     <asp:BoundField DataField="BasePrice" HeaderText="BasePrice" SortExpression="BasePrice" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TravelExpertsConnectionString1 %>" SelectCommand="SELECT Bookings.BookingNo, Bookings.BookingDate, BookingDetails.TripStart, BookingDetails.TripEnd, BookingDetails.Description, BookingDetails.Destination, BookingDetails.BasePrice FROM BookingDetails INNER JOIN Bookings ON BookingDetails.BookingId = Bookings.BookingId INNER JOIN Customers ON Bookings.CustomerId = Customers.CustomerId"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TravelExpertsConnectionString1 %>" SelectCommand="SELECT        Bookings.BookingNo, Bookings.BookingDate, BookingDetails.TripStart, BookingDetails.TripEnd, BookingDetails.Description, BookingDetails.Destination, BookingDetails.BasePrice
+FROM            BookingDetails INNER JOIN
+                         Bookings ON BookingDetails.BookingId = Bookings.BookingId INNER JOIN
+                         Customers ON Bookings.CustomerId = Customers.CustomerId
+			 where Customers.CustUserName='L.Enison'"></asp:SqlDataSource>
         </div>
     </form>
 </body>
