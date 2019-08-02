@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace TravelExpertsData
 {
+    /*
+     * Victor Lantion
+     * Purpose: Method to compare user input to database in the login form
+     */
     public class CustomerDB
     {
         public static int GetCustomer(string username, string password)

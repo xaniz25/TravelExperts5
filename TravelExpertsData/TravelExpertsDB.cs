@@ -9,6 +9,7 @@ namespace TravelExpertsData
 {
     public static class TravelExpertsDB
     {
+
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(@"Data Source=DADI-LAPTOP;Initial Catalog=TravelExperts;Integrated Security=True");

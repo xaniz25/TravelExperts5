@@ -15,11 +15,14 @@ namespace TravelExperts5
         {
 
         }
-
+        /*
+         * Victor Lantion
+         * Purpose: On login click, checks for a match and redirects page. 
+         */
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             string username = "L.Enison"; //txtUsername.Text;
-            string password = "bam"; //txtPassword.Text;
+            string password = "P@ssword"; //txtPassword.Text;
 
             int matchCount = CustomerDB.GetCustomer(username, password);
             if (matchCount == 1)
