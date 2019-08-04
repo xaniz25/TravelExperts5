@@ -3,3 +3,4 @@ C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\bin\Debug\Trave
 C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csproj.CoreCompileInputs.cache
 C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.dll
 C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.pdb
+C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csprojAssemblyReference.cache

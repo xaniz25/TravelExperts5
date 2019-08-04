@@ -21,18 +21,20 @@ namespace TravelExperts5
          */
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-            string username = "L.Enison"; //txtUsername.Text;
-            string password = "P@ssword"; //txtPassword.Text;
+            string username = Login1.UserName; //"L.Enison"; //txtUsername.Text;
+            string password = Login1.Password; //txtPassword.Text;
 
             int matchCount = CustomerDB.GetCustomer(username, password);
             if (matchCount == 1)
             {
-                //Session["Username"] = txtUsername.Text;
+                Session["Username"] = Login1.UserName;
                 Response.Redirect("Detail.aspx");
             }
             else
             {
                 // error message
+                Response.Redirect("Register.aspx");
+
             }
 
 
