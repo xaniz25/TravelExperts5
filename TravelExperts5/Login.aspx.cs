@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Victor Lantion
+ * Purpose: On login click, checks for a match in database and redirects page. 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,40 +14,58 @@ using TravelExpertsData;
 
 namespace TravelExperts5
 {
+
     public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!this.IsPostBack)
+                ViewState["LoginErrors"] = 0;
         }
-        /*
-         * Victor Lantion
-         * Purpose: On login click, checks for a match and redirects page. 
-         */
-        protected void LoginButton_Click(object sender, EventArgs e)
+        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            string username = Login1.UserName; //"L.Enison"; //txtUsername.Text;
-            string password = Login1.Password; //txtPassword.Text;
-
-            int matchCount = CustomerDB.GetCustomer(username, password);
-            if (matchCount == 1)
+            if (LogInValidation(Login1.UserName, Login1.Password))
             {
+                // e.Authenticated = true;  
+                Login1.Visible = false;
                 Session["Username"] = Login1.UserName;
                 Response.Redirect("Detail.aspx");
             }
             else
             {
-                // error message
-                Response.Redirect("Register.aspx");
-
+                e.Authenticated = false;
             }
-
-
         }
 
-        protected void ResetButton_Click(object sender, EventArgs e)
+        private bool LogInValidation(string userName, string password)
         {
+            int matchCount = CustomerDB.GetCustomer(userName, password);
+            // username and password is valid
+            if (matchCount == 1)
+            {
+                return true;
+            }
+            // no valid username & password found
+            else
+            {
+                return false;
+            }
+        }
 
+        protected void Login1_LoginError(object sender, EventArgs e)
+        {
+            if (ViewState["LoginErrors"] == null)
+                ViewState["LoginErrors"] = 0;
+            int ErrorCount = (int)ViewState["LoginErrors"] + 1;
+            ViewState["LoginErrors"] = ErrorCount;
+            if ((ErrorCount > 3) && (Login1.PasswordRecoveryUrl != string.Empty))
+                Response.Redirect(Login1.PasswordRecoveryUrl);
+        }
+        
+        protected void RegisterButton_Click(object sender, EventArgs e)
+        {
+            //redirects to register page
+            Response.Redirect("Register.aspx");
         }
     }
 }

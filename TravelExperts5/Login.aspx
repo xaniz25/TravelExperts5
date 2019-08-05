@@ -10,7 +10,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Login ID="Login1" runat="server" BackColor="#E3EAEB" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="291px" TextLayout="TextOnTop" Width="470px">
+    <asp:Login ID="Login1" runat="server" BackColor="#E3EAEB" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="291px" TextLayout="TextOnTop" Width="470px" OnAuthenticate="Login1_Authenticate" OnLoginError="Login1_LoginError">
         <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
         <LayoutTemplate>
             <table cellpadding="4" cellspacing="0" style="border-collapse:collapse;">
@@ -49,14 +49,14 @@
                             </tr>
                             <tr>
                                 <td align="center" style="color:Red;">
-                                    <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+                                    <asp:Literal ID="FailureText" runat="server" ClientIDMode="Static"></asp:Literal>
                                 </td>
                             </tr>
                             <tr>
                                 <td align="right" class="auto-style1">
-                                    <asp:Button ID="LoginButton" runat="server" BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" OnClick="LoginButton_Click" Text="Log In" ValidationGroup="Login1" />
+                                    <asp:Button ID="LoginButton" runat="server" BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" Text="Log In" ValidationGroup="Login1" />
                                     <br />
-                                    <asp:Button ID="ResetButton" runat="server" BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" OnClick="ResetButton_Click" Text="Reset" ValidationGroup="Login1" />
+                                    <asp:Button ID="RegisterButton" runat="server" BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" CommandName="Login" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" OnClick="RegisterButton_Click" Text="Register" />
                                 </td>
                             </tr>
                         </table>
