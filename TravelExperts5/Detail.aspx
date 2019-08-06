@@ -5,22 +5,22 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div id="details">
             <h3>Your Information</h3>
-            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="CustomerId" DataSourceID="SqlDataSource1" Height="50px" Width="272px">
+            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="CustomerId" DataSourceID="SqlDataSource1" Height="50px" Width="272px" CellPadding="5" AllowPaging="True">
                 <Fields>
                     <asp:BoundField DataField="CustomerId" HeaderText="CustomerId" InsertVisible="False" ReadOnly="True" SortExpression="CustomerId" />
-                    <asp:BoundField DataField="CustFirstName" HeaderText="First Name" SortExpression="CustFirstName" />
-                    <asp:BoundField DataField="CustLastName" HeaderText="Last Name" SortExpression="CustLastName" />
-                    <asp:BoundField DataField="CustAddress" HeaderText="Address" SortExpression="CustAddress" />
-                    <asp:BoundField DataField="CustCity" HeaderText="City" SortExpression="CustCity" />
-                    <asp:BoundField DataField="CustProv" HeaderText="Province" SortExpression="CustProv" />
-                    <asp:BoundField DataField="CustPostal" HeaderText="Postal Code" SortExpression="CustPostal" />
-                    <asp:BoundField DataField="CustCountry" HeaderText="Country" SortExpression="CustCountry" />
-                    <asp:BoundField DataField="CustHomePhone" HeaderText="Home Phone" SortExpression="CustHomePhone" />
-                    <asp:BoundField DataField="CustBusPhone" HeaderText="Bus Phone" SortExpression="CustBusPhone" />
-                    <asp:BoundField DataField="CustEmail" HeaderText="Email" SortExpression="CustEmail" />
-                    <asp:BoundField DataField="CustUserName" HeaderText="Username" SortExpression="CustUserName" />
-                    <asp:BoundField DataField="CustPassword" HeaderText="Password" SortExpression="CustPassword" />
-                    <asp:CommandField ShowEditButton="True" />
+                    <asp:BoundField DataField="CustFirstName" HeaderText="CustFirstName" SortExpression="CustFirstName" />
+                    <asp:BoundField DataField="CustLastName" HeaderText="CustLastName" SortExpression="CustLastName" />
+                    <asp:BoundField DataField="CustAddress" HeaderText="CustAddress" SortExpression="CustAddress" />
+                    <asp:BoundField DataField="CustCity" HeaderText="CustCity" SortExpression="CustCity" />
+                    <asp:BoundField DataField="CustProv" HeaderText="CustProv" SortExpression="CustProv" />
+                    <asp:BoundField DataField="CustPostal" HeaderText="CustPostal" SortExpression="CustPostal" />
+                    <asp:BoundField DataField="CustCountry" HeaderText="CustCountry" SortExpression="CustCountry" />
+                    <asp:BoundField DataField="CustHomePhone" HeaderText="CustHomePhone" SortExpression="CustHomePhone" />
+                    <asp:BoundField DataField="CustBusPhone" HeaderText="CustBusPhone" SortExpression="CustBusPhone" />
+                    <asp:BoundField DataField="CustEmail" HeaderText="CustEmail" SortExpression="CustEmail" />
+                    <asp:BoundField DataField="CustUserName" HeaderText="CustUserName" SortExpression="CustUserName" />
+                    <asp:BoundField DataField="CustPassword" HeaderText="CustPassword" SortExpression="CustPassword" />
+                    <asp:CommandField ShowEditButton="True" ShowInsertButton="True" />
                 </Fields>
             </asp:DetailsView>
             <br />
@@ -44,7 +44,7 @@
                     <asp:Parameter Name="CustPassword" Type="String" />
                 </InsertParameters>
                 <SelectParameters>
-                    <asp:SessionParameter Name="CustUserName" SessionField="L.Enison" Type="String" DefaultValue="L.Enison" />
+                    <asp:SessionParameter Name="CustUserName" SessionField="Username" Type="String" DefaultValue="" />
                 </SelectParameters>
                 <UpdateParameters>
                     <asp:Parameter Name="CustFirstName" Type="String" />
@@ -63,7 +63,7 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" CellPadding="5">
                 <Columns>
                     <asp:BoundField DataField="BookingNo" HeaderText="BookingNo" SortExpression="BookingNo" />
                     <asp:BoundField DataField="BookingDate" HeaderText="BookingDate" SortExpression="BookingDate" />
@@ -78,6 +78,10 @@
 FROM            BookingDetails INNER JOIN
                          Bookings ON BookingDetails.BookingId = Bookings.BookingId INNER JOIN
                          Customers ON Bookings.CustomerId = Customers.CustomerId
-			 where Customers.CustUserName='L.Enison'"></asp:SqlDataSource>
+			 where Customers.CustUserName=@CustUserName">
+                <SelectParameters>
+                    <asp:SessionParameter Name="CustUserName" SessionField="Username" />
+                </SelectParameters>
+            </asp:SqlDataSource>
         </div>
 </asp:Content>

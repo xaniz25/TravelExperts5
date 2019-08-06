@@ -17,7 +17,7 @@
             <header>
                 <img id="logo" alt="logo" class="auto-style1" src="Content/travellogo.png" />
                 <nav id = "navbar">
-                    <asp:Button class="btn" ID="btnHome" runat="server" Text="Home" />
+                    <asp:Button class="btn" ID="btnHome" runat="server" Text="Home" PostBackUrl="~/Home.aspx"/>
                     <asp:Button class="btn" ID="btnRegister" runat="server" Text="Register" PostBackUrl="~/Register.aspx" />
                     <asp:Button class="btn" ID="btnLogin" runat="server" Text="Login" PostBackUrl="~/Login.aspx" />
                 </nav>
