@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -40,6 +41,37 @@ namespace TravelExpertsData
             {
                 throw ex;
             }
+        }
+
+        public static int SaveCustomer<T>(string sql, T data)
+        {
+            using (SqlConnection conn = TravelExpertsDB.GetConnection())
+            {
+                return conn.Execute(sql, data);
+            }
+        }
+
+        public static int CreateCustomer(string fname, string lname, string address, string city, string prov, string postal, string country, string hphone, string bphone, string email, string username, string password)
+        {
+            Customer cust = new Customer
+            {
+                CustFirstName = fname,
+                CustLastName = lname,
+                CustAddress = address,
+                CustCity = city,
+                CustProv = prov,
+                CustPostal = postal,
+                CustCountry = country,
+                CustHomePhone = hphone,
+                CustBusPhone = bphone,
+                CustEmail = email,
+                CustUserName = username,
+                CustPassword = password
+            };
+
+            string sql = @"INSERT INTO Customers (CustFirstName, CustLastName, CustAddress, CustCity, CustProv, CustPostal, CustCountry, CustHomePhone, CustBusPhone, CustEmail, CustUserName, CustPassword) VALUES (@CustFirstName, @CustLastName, @CustAddress, @CustCity, @CustProv, @CustPostal, @CustCountry, @CustHomePhone, @CustBusPhone, @CustEmail, @CustUserName, @CustPassword)";
+
+            return SaveCustomer(sql, cust);
         }
     }
 }

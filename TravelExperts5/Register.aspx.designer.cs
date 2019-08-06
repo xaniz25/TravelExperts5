@@ -40,13 +40,22 @@ namespace TravelExperts5 {
         protected global::System.Web.UI.WebControls.TextBox EmailBox;
         
         /// <summary>
-        /// PhoneBox control.
+        /// HPhoneBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PhoneBox;
+        protected global::System.Web.UI.WebControls.TextBox HPhoneBox;
+        
+        /// <summary>
+        /// BPhoneBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BPhoneBox;
         
         /// <summary>
         /// AddressBox control.
@@ -74,6 +83,33 @@ namespace TravelExperts5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlProvince;
+        
+        /// <summary>
+        /// PostalBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PostalBox;
+        
+        /// <summary>
+        /// CountryBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CountryBox;
+        
+        /// <summary>
+        /// UsernameBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox UsernameBox;
         
         /// <summary>
         /// PasswordBox control.

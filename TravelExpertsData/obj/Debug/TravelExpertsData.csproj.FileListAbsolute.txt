@@ -4,3 +4,12 @@ C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\Trave
 C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.dll
 C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.pdb
 C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csprojAssemblyReference.cache
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Debug\TravelExpertsData.dll
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Debug\TravelExpertsData.pdb
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Debug\Dapper.dll
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Debug\Dapper.xml
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csprojAssemblyReference.cache
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csproj.CoreCompileInputs.cache
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csproj.CopyComplete
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.dll
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.pdb
