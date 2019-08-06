@@ -1,38 +1,30 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Detail.aspx.cs" Inherits="TravelExperts5.Detail" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detail.aspx.cs" Inherits="TravelExperts5.Detail" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            height: 472px;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="auto-style1">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <div id="details">
+            <h3>Your Information</h3>
             <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="CustomerId" DataSourceID="SqlDataSource1" Height="50px" Width="272px">
                 <Fields>
                     <asp:BoundField DataField="CustomerId" HeaderText="CustomerId" InsertVisible="False" ReadOnly="True" SortExpression="CustomerId" />
-                    <asp:BoundField DataField="CustFirstName" HeaderText="CustFirstName" SortExpression="CustFirstName" />
-                    <asp:BoundField DataField="CustLastName" HeaderText="CustLastName" SortExpression="CustLastName" />
-                    <asp:BoundField DataField="CustAddress" HeaderText="CustAddress" SortExpression="CustAddress" />
-                    <asp:BoundField DataField="CustCity" HeaderText="CustCity" SortExpression="CustCity" />
-                    <asp:BoundField DataField="CustProv" HeaderText="CustProv" SortExpression="CustProv" />
-                    <asp:BoundField DataField="CustPostal" HeaderText="CustPostal" SortExpression="CustPostal" />
-                    <asp:BoundField DataField="CustCountry" HeaderText="CustCountry" SortExpression="CustCountry" />
-                    <asp:BoundField DataField="CustHomePhone" HeaderText="CustHomePhone" SortExpression="CustHomePhone" />
-                    <asp:BoundField DataField="CustBusPhone" HeaderText="CustBusPhone" SortExpression="CustBusPhone" />
-                    <asp:BoundField DataField="CustEmail" HeaderText="CustEmail" SortExpression="CustEmail" />
-                    <asp:BoundField DataField="CustUserName" HeaderText="CustUserName" SortExpression="CustUserName" />
-                    <asp:BoundField DataField="CustPassword" HeaderText="CustPassword" SortExpression="CustPassword" />
+                    <asp:BoundField DataField="CustFirstName" HeaderText="First Name" SortExpression="CustFirstName" />
+                    <asp:BoundField DataField="CustLastName" HeaderText="Last Name" SortExpression="CustLastName" />
+                    <asp:BoundField DataField="CustAddress" HeaderText="Address" SortExpression="CustAddress" />
+                    <asp:BoundField DataField="CustCity" HeaderText="City" SortExpression="CustCity" />
+                    <asp:BoundField DataField="CustProv" HeaderText="Province" SortExpression="CustProv" />
+                    <asp:BoundField DataField="CustPostal" HeaderText="Postal Code" SortExpression="CustPostal" />
+                    <asp:BoundField DataField="CustCountry" HeaderText="Country" SortExpression="CustCountry" />
+                    <asp:BoundField DataField="CustHomePhone" HeaderText="Home Phone" SortExpression="CustHomePhone" />
+                    <asp:BoundField DataField="CustBusPhone" HeaderText="Bus Phone" SortExpression="CustBusPhone" />
+                    <asp:BoundField DataField="CustEmail" HeaderText="Email" SortExpression="CustEmail" />
+                    <asp:BoundField DataField="CustUserName" HeaderText="Username" SortExpression="CustUserName" />
+                    <asp:BoundField DataField="CustPassword" HeaderText="Password" SortExpression="CustPassword" />
                     <asp:CommandField ShowEditButton="True" />
                 </Fields>
             </asp:DetailsView>
             <br />
+            <h3>Your Bookings</h3>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TravelExpertsConnectionString1 %>" DeleteCommand="DELETE FROM [Customers] WHERE [CustomerId] = @CustomerId" InsertCommand="INSERT INTO [Customers] ([CustFirstName], [CustLastName], [CustAddress], [CustCity], [CustProv], [CustPostal], [CustCountry], [CustHomePhone], [CustBusPhone], [CustEmail], [CustUserName], [CustPassword]) VALUES (@CustFirstName, @CustLastName, @CustAddress, @CustCity, @CustProv, @CustPostal, @CustCountry, @CustHomePhone, @CustBusPhone, @CustEmail, @CustUserName, @CustPassword)" SelectCommand="SELECT [CustomerId], [CustFirstName], [CustLastName], [CustAddress], [CustCity], [CustProv], [CustPostal], [CustCountry], [CustHomePhone], [CustBusPhone], [CustEmail], [CustUserName], [CustPassword] FROM [Customers] WHERE ([CustUserName] = @CustUserName)" UpdateCommand="UPDATE [Customers] SET [CustFirstName] = @CustFirstName, [CustLastName] = @CustLastName, [CustAddress] = @CustAddress, [CustCity] = @CustCity, [CustProv] = @CustProv, [CustPostal] = @CustPostal, [CustCountry] = @CustCountry, [CustHomePhone] = @CustHomePhone, [CustBusPhone] = @CustBusPhone, [CustEmail] = @CustEmail, [CustUserName] = @CustUserName, [CustPassword] = @CustPassword WHERE [CustomerId] = @CustomerId">
                 <DeleteParameters>
                     <asp:Parameter Name="CustomerId" Type="Int32" />
@@ -88,6 +80,4 @@ FROM            BookingDetails INNER JOIN
                          Customers ON Bookings.CustomerId = Customers.CustomerId
 			 where Customers.CustUserName='L.Enison'"></asp:SqlDataSource>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
