@@ -67,5 +67,10 @@ namespace TravelExperts5
             //redirects to register page
             Response.Redirect("Register.aspx");
         }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
