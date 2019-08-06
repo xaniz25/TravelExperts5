@@ -18,10 +18,22 @@
     color: white;
 }
 
-    .btn:hover {
-        background-color: white;
-        color: #58a28b;
-    }
+.btn:hover {
+    background-color: white;
+    color: #58a28b;
+}
+
+#home {
+    background-image: url(beach.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+#welcome{
+    padding-top: 30vh;
+    margin: 0 50px;
+    color: white;
+}
 
 #regfrm {
     background-color: #c2d1cd;

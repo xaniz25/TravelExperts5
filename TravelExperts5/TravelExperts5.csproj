@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\beach.jpg" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\travellogo.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -81,7 +82,7 @@
     <Content Include="Web.config" />
     <Content Include="Register.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Dash.aspx" />
+    <Content Include="Home.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Detail.aspx.cs">
@@ -113,12 +114,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dash.aspx.cs">
-      <DependentUpon>Dash.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dash.aspx.designer.cs">
-      <DependentUpon>Dash.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
