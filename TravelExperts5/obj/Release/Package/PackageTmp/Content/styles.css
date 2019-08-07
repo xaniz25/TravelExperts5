@@ -1,0 +1,78 @@
+﻿/*Shanice Talan - Webform styling*/
+body {
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#navbar {
+    background-color: #58a28b;
+    width: 100vw;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+}
+
+.btn {
+    background-color: #58a28b;
+    padding: 5px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #58a28b;
+}
+
+#home {
+    background-image: url(beach.jpg);
+    background-size: cover;
+    height: 85vh;
+}
+
+#welcome{
+    padding-top: 30vh;
+    margin: 0 50px;
+    color: white;
+}
+
+#regfrm {
+    background-color: #c2d1cd;
+    margin: 25px;
+    padding: 25px;
+    width: 540px;
+    height: 540px;
+    border-radius: 5px;
+}
+
+#success {
+    text-align: center;
+    margin: 50px;
+    padding: 25px;
+    background-color: #c2d1cd;
+    border-radius: 5px;
+}
+
+.scsbtn {
+    background-color: #58a28b;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.scsbtn:hover {
+    background-color: white;
+    color: #58a28b;
+}
+
+#login{
+    margin: 25px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+#details{
+    padding: 25px;
+}

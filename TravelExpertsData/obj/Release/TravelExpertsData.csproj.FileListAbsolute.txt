@@ -1,0 +1,9 @@
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Release\TravelExpertsData.dll
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Release\TravelExpertsData.pdb
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Release\Dapper.dll
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\bin\Release\Dapper.xml
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Release\TravelExpertsData.csprojAssemblyReference.cache
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Release\TravelExpertsData.csproj.CoreCompileInputs.cache
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Release\TravelExpertsData.csproj.CopyComplete
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Release\TravelExpertsData.dll
+C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Release\TravelExpertsData.pdb

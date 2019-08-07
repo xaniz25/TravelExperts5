@@ -74,6 +74,7 @@
     <Content Include="Content\styles.css" />
     <Content Include="Content\travellogo.png" />
     <Content Include="Success.aspx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Detail.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />

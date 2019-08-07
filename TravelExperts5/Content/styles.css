@@ -67,10 +67,11 @@ body {
     color: #58a28b;
 }
 
-#login{
+#login {
     margin: 25px;
     border-radius: 10px;
     width: 400px;
+    background-color: #c2d1cd;
 }
 
 #details{

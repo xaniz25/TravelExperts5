@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="login">
-    <asp:Login ID="Login1" runat="server" BackColor="#E3EAEB" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="291px" TextLayout="TextOnTop" Width="470px" OnAuthenticate="Login1_Authenticate" OnLoginError="Login1_LoginError">
+    <asp:Login ID="Login1" runat="server" BackColor="#C2D1CD" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="291px" TextLayout="TextOnTop" Width="470px" OnAuthenticate="Login1_Authenticate" OnLoginError="Login1_LoginError">
         <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
         <LayoutTemplate>
             <table cellpadding="4" cellspacing="0" style="border-collapse:collapse;">
