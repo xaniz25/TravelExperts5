@@ -19,14 +19,20 @@ namespace TravelExperts5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //fix for Enter keydown event
+            Button lbButton = Login1.FindControl("LoginButton") as Button;
+            ContentPlaceHolder contentPlaceHolder = (ContentPlaceHolder)Master.FindControl("ContentPlaceHolder1");
+            contentPlaceHolder.Page.Form.DefaultButton = lbButton.UniqueID;
+
             if (!this.IsPostBack)
                 ViewState["LoginErrors"] = 0;
         }
+
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
             if (LogInValidation(Login1.UserName, Login1.Password))
             {
-                // e.Authenticated = true;  
+                //e.Authenticated = true;  
                 Login1.Visible = false;
                 Session["Username"] = Login1.UserName;
                 Response.Redirect("Detail.aspx");
@@ -66,11 +72,6 @@ namespace TravelExperts5
         {
             //redirects to register page
             Response.Redirect("Register.aspx");
-        }
-
-        protected void LoginButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

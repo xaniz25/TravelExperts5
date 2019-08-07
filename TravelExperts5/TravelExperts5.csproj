@@ -73,6 +73,7 @@
     <Content Include="Content\beach.jpg" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\travellogo.png" />
+    <Content Include="Success.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Detail.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -120,6 +121,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Success.aspx.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Success.aspx.designer.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

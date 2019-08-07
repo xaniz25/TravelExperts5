@@ -35,6 +35,7 @@ namespace TravelExperts5
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             CustomerDB.CreateCustomer(FirstNameBox.Text, LastNameBox.Text, AddressBox.Text, CityBox.Text, ddlProvince.Text, PostalBox.Text, CountryBox.Text, HPhoneBox.Text, BPhoneBox.Text, EmailBox.Text, UsernameBox.Text, PasswordBox.Text);
+            Response.Redirect("Success.aspx");
         }
     }
 }
