@@ -14,11 +14,12 @@ Design a page that will enable a customer to list the travel products they have 
 
 Write an informal reflective journal of around half a page that discusses what you learned from the modules during this term, how your team-members worked together (were there communication/scheduling/etc. issues that had to be resolved?), what things worked best, and what you would do differently in the future. Don’t mention any names, just think about the processes your team used, how well they worked and how they could be improved for your next project.  This should be in a Word/OpenOffice/RTF document which will be added to the zip file that you hand in with your second presentation.
 
-Home page
-Register Page
-Login page
-Detail/history page
+Site Master & Styling- Shanice Talan
+Home page - Shanice Talan
+Register Page - Shanice Talan & Validation by Victor Lantion
+Login page - Victor Lantion
+Detail/history page - Kai Feng
 
-homepage has reg & login page, detail/history show up after login success
-deatail can be edit , history record read-only
+Homepage has reg & login page, detail/history show up after login success
+Customer details can be edited, Booking history record read-only
 
