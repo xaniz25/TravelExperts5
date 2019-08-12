@@ -13,3 +13,6 @@ C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExper
 C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csproj.CopyComplete
 C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.dll
 C:\Users\574165\Documents\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.pdb
+C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\bin\Debug\Dapper.dll
+C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\bin\Debug\Dapper.xml
+C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExpertsData\obj\Debug\TravelExpertsData.csproj.CopyComplete

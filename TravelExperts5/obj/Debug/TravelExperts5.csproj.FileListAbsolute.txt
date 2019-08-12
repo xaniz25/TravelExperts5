@@ -293,3 +293,5 @@ C:\Users\tovil\Desktop\TravelExperts5\TravelExperts5\obj\Debug\TravelExperts5.cs
 C:\Users\tovil\Desktop\TravelExperts5\TravelExperts5\obj\Debug\TravelExperts5.csproj.CopyComplete
 C:\Users\tovil\Desktop\TravelExperts5\TravelExperts5\obj\Debug\TravelExperts5.dll
 C:\Users\tovil\Desktop\TravelExperts5\TravelExperts5\obj\Debug\TravelExperts5.pdb
+C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExperts5\bin\Dapper.dll
+C:\Users\tovil\Documents\GitHub\TravelExperts5\TravelExperts5\bin\Dapper.xml

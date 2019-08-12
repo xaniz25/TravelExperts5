@@ -12,7 +12,7 @@ namespace TravelExpertsData
 
         public static SqlConnection GetConnection()
         {
-            return new SqlConnection(@"Data Source=localhost;Initial Catalog=TravelExperts;Integrated Security=True");
+            return new SqlConnection(@"Data Source=DADI-LAPTOP;Initial Catalog=TravelExperts;Integrated Security=True");
         }
     }
 }
