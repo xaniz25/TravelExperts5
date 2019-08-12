@@ -1,4 +1,4 @@
-# TravelExperts5
+﻿# TravelExperts5
 
 Construct this page to enable the form data to be sent to an ASP.NET page that will verify the data and either re-display the form with appropriate error messages, or create a customer record.
 
@@ -12,7 +12,10 @@ Enhance the customer sign-up page to enable customers to log in and update their
 
 Design a page that will enable a customer to list the travel products they have purchased, and get a price breakdown listing the cost of each product or package, and the total cost owing.
 
-Write an informal reflective journal of around half a page that discusses what you learned from the modules during this term, how your team-members worked together (were there communication/scheduling/etc. issues that had to be resolved?), what things worked best, and what you would do differently in the future. Don’t mention any names, just think about the processes your team used, how well they worked and how they could be improved for your next project.  This should be in a Word/OpenOffice/RTF document which will be added to the zip file that you hand in with your second presentation.
+Write an informal reflective journal of around half a page that discusses what you learned from the modules during this term, how your team-members worked together 
+(were there communication/scheduling/etc. issues that had to be resolved?), what things worked best, and what you would do differently in the future.
+ Don’t mention any names, just think about the processes your team used, how well they worked and how they could be improved for your next project.  
+This should be in a Word/OpenOffice/RTF document which will be added to the zip file that you hand in with your second presentation.
 
 Site Master & Styling- Shanice Talan
 Home page - Shanice Talan
@@ -22,4 +25,27 @@ Detail/history page - Kai Feng
 
 Homepage has reg & login page, detail/history show up after login success
 Customer details can be edited, Booking history record read-only
+
+
+
+Reflective Journal
+
+Learnings from the modules this term:
+Using ASP.NET web forms and how it compares to ASP.NET MVC design pattern.	
+In ASP.NET MVC pattern, the complete separation of view,data and business logic allows the design, implementation and testing of each portion of the application while keeping the code organized.
+Although MVC is faster in the application development process, our team decided to go with ASP.NET web forms as we felt that we were more in control and 
+there are less auto-generated code.
+
+Group Work:
+Our team has a good chemistry because of our complementary talents. 
+The team had a clear understanding of what the goal was and supported each other.
+
+Realizations:
+Initially our team decided to use github, but with the lack of experience with the software, we easily encountered issues in code integration. 
+The team overcame this by setting a masterfile in one machine and, updating that file/code daily by copying and pasting code manually.
+This would be a great area for improvement and will be something we should practice and learn before the next workshop.
+
+
+
+
 
